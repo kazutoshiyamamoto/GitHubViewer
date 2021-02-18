@@ -15,6 +15,8 @@
 		FDD75CE425DE8AB600FFAA66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD75CE225DE8AB600FFAA66 /* LaunchScreen.storyboard */; };
 		FDD75CEF25DE8AB700FFAA66 /* GitHubViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD75CEE25DE8AB700FFAA66 /* GitHubViewerTests.swift */; };
 		FDD75CFA25DE8AB700FFAA66 /* GitHubViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD75CF925DE8AB700FFAA66 /* GitHubViewerUITests.swift */; };
+		FDD75D0C25DE8E1C00FFAA66 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD75D0A25DE8E1C00FFAA66 /* TableViewCell.swift */; };
+		FDD75D0D25DE8E1C00FFAA66 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD75D0B25DE8E1C00FFAA66 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FDD75CF525DE8AB700FFAA66 /* GitHubViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD75CF925DE8AB700FFAA66 /* GitHubViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubViewerUITests.swift; sourceTree = "<group>"; };
 		FDD75CFB25DE8AB700FFAA66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD75D0A25DE8E1C00FFAA66 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FDD75D0B25DE8E1C00FFAA66 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				FDD75CD925DE8AB200FFAA66 /* SceneDelegate.swift */,
 				FDD75CDB25DE8AB200FFAA66 /* ViewController.swift */,
 				FDD75CDD25DE8AB200FFAA66 /* Main.storyboard */,
+				FDD75D0A25DE8E1C00FFAA66 /* TableViewCell.swift */,
+				FDD75D0B25DE8E1C00FFAA66 /* TableViewCell.xib */,
 				FDD75CE025DE8AB600FFAA66 /* Assets.xcassets */,
 				FDD75CE225DE8AB600FFAA66 /* LaunchScreen.storyboard */,
 				FDD75CE525DE8AB600FFAA66 /* Info.plist */,
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD75CE425DE8AB600FFAA66 /* LaunchScreen.storyboard in Resources */,
+				FDD75D0D25DE8E1C00FFAA66 /* TableViewCell.xib in Resources */,
 				FDD75CE125DE8AB600FFAA66 /* Assets.xcassets in Resources */,
 				FDD75CDF25DE8AB200FFAA66 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD75CDC25DE8AB200FFAA66 /* ViewController.swift in Sources */,
+				FDD75D0C25DE8E1C00FFAA66 /* TableViewCell.swift in Sources */,
 				FDD75CD825DE8AB200FFAA66 /* AppDelegate.swift in Sources */,
 				FDD75CDA25DE8AB200FFAA66 /* SceneDelegate.swift in Sources */,
 			);
