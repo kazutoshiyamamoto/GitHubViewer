@@ -29,6 +29,14 @@ extension ViewController: UISearchBarDelegate {
         return true
     }
     
+    // キャンセルボタン選択時の処理
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        // キャンセルボタンを非表示に変更
+        searchBar.showsCancelButton = false
+        // キーボードを下げる
+        searchBar.resignFirstResponder()
+    }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("検索ボタンが選択された")
     }
