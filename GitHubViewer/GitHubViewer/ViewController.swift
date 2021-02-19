@@ -20,6 +20,12 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("検索ボタンが選択された")
+    }
+}
+
 extension ViewController: UITableViewDataSource {
     // セルの個数
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
