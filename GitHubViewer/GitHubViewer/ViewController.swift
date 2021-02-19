@@ -21,6 +21,14 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UISearchBarDelegate {
+    // 編集開始時の処理
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        // キャンセルボタンを表示
+        searchBar.showsCancelButton = true
+        
+        return true
+    }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("検索ボタンが選択された")
     }
