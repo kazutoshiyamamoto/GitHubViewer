@@ -37,6 +37,7 @@ extension ViewController: UISearchBarDelegate {
         searchBar.resignFirstResponder()
     }
     
+    // 検索実行時の処理
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("検索ボタンが選択された")
     }
