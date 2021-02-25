@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD55D83625E7DC140094588C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55D83525E7DC140094588C /* User.swift */; };
 		FDD75CD825DE8AB200FFAA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD75CD725DE8AB200FFAA66 /* AppDelegate.swift */; };
 		FDD75CDA25DE8AB200FFAA66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD75CD925DE8AB200FFAA66 /* SceneDelegate.swift */; };
 		FDD75CDC25DE8AB200FFAA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD75CDB25DE8AB200FFAA66 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD55D83525E7DC140094588C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FDD75CD425DE8AB200FFAA66 /* GitHubViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD75CD725DE8AB200FFAA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD75CD925DE8AB200FFAA66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD55D83225E7DBC90094588C /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				FD55D83325E7DBDA0094588C /* API */,
+			);
+			path = GitHub;
+			sourceTree = "<group>";
+		};
+		FD55D83325E7DBDA0094588C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FD55D83425E7DBFA0094588C /* Entity */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FD55D83425E7DBFA0094588C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FD55D83525E7DC140094588C /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		FDD75CCB25DE8AB200FFAA66 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +135,7 @@
 				FDD75CDD25DE8AB200FFAA66 /* Main.storyboard */,
 				FDD75D0A25DE8E1C00FFAA66 /* TableViewCell.swift */,
 				FDD75D0B25DE8E1C00FFAA66 /* TableViewCell.xib */,
+				FD55D83225E7DBC90094588C /* GitHub */,
 				FDD75CE025DE8AB600FFAA66 /* Assets.xcassets */,
 				FDD75CE225DE8AB600FFAA66 /* LaunchScreen.storyboard */,
 				FDD75CE525DE8AB600FFAA66 /* Info.plist */,
@@ -268,6 +295,7 @@
 				FDD75CDC25DE8AB200FFAA66 /* ViewController.swift in Sources */,
 				FDD75D0C25DE8E1C00FFAA66 /* TableViewCell.swift in Sources */,
 				FDD75CD825DE8AB200FFAA66 /* AppDelegate.swift in Sources */,
+				FD55D83625E7DC140094588C /* User.swift in Sources */,
 				FDD75CDA25DE8AB200FFAA66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
