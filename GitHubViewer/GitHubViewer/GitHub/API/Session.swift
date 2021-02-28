@@ -7,6 +7,9 @@
 
 import Foundation
 
+final class Session {
+}
+
 enum SessionError: Error {
     case noData(HTTPURLResponse)
     case noResponse
