@@ -15,3 +15,14 @@ enum SessionError: Error {
     case failedToCreateURL(URLComponents)
 }
 
+extension SessionError {
+    struct Message: Decodable {
+        let documentationURL: URL
+        let message: String
+        
+        private enum CodingKeys: String, CodingKey {
+            case documentationURL = "documentation_url"
+            case message
+        }
+    }
+}
