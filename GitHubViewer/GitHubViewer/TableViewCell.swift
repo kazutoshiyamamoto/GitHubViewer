@@ -16,6 +16,13 @@ class TableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     private var task: URLSessionTask?
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        task?.cancel()
+        task = nil
+        imageView?.image = nil
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
