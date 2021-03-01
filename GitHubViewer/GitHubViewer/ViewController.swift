@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    let titles = ["タイトル1", "タイトル2", "タイトル3"]
     private(set) var users: [User] = []
     
     override func viewDidLoad() {
@@ -53,7 +52,6 @@ extension ViewController: UISearchBarDelegate {
     
     // 検索実行時の処理
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("検索ボタンが選択された")
         guard let query = searchBar.text else { return }
         guard !query.isEmpty else { return }
         
@@ -77,14 +75,12 @@ extension ViewController: UISearchBarDelegate {
 extension ViewController: UITableViewDataSource {
     // セルの個数
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return titles.count
         return users.count
     }
     
     // セルを作成
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
-        cell.title.text = titles[indexPath.row]
         cell.title.text = users[indexPath.row].login
         return cell
     }
