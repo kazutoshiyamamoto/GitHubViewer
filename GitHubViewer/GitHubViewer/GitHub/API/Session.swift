@@ -8,6 +8,8 @@
 import Foundation
 
 final class Session {
+    private let additionalHeaderFields: () -> [String: String]?
+    private let session: URLSession
 }
 
 enum SessionError: Error {
