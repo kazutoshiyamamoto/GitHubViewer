@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
     }
     
+    // ユーザー情報を取得
     func fetchUser(query: String, completion: @escaping (Result<[User]>) -> ()) {
         let request = SearchUsersRequest(query: query)
         
@@ -68,7 +69,6 @@ extension ViewController: UISearchBarDelegate {
                 ()
             }
         }
-        
     }
 }
 

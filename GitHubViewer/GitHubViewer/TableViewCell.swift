@@ -14,6 +14,7 @@ class TableViewCell: UITableViewCell {
     
     private var task: URLSessionTask?
 
+    // セルの初期化処理
     override func prepareForReuse() {
         super.prepareForReuse()
 
@@ -23,6 +24,7 @@ class TableViewCell: UITableViewCell {
     }
 
     func configure(user: User) {
+        // 画像URLからユーザー画像を取得して表示
         task = {
             let url = user.avatarURL
             let task = URLSession.shared.dataTask(with: url) { data, response, error in
