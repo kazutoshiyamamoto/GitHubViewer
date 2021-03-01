@@ -12,9 +12,6 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var title: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
     private var task: URLSessionTask?
 
     override func prepareForReuse() {
@@ -25,8 +22,6 @@ class TableViewCell: UITableViewCell {
         imageView?.image = nil
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
     func configure(user: User) {
         task = {
             let url = user.avatarURL
@@ -50,7 +45,6 @@ class TableViewCell: UITableViewCell {
             return task
         }()
 
-        // Configure the view for the selected state
         title.text = user.login
     }
 }
