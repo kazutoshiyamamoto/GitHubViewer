@@ -78,12 +78,14 @@ extension ViewController: UITableViewDataSource {
     // セルの個数
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titles.count
+        return users.count
     }
     
     // セルを作成
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         cell.title.text = titles[indexPath.row]
+        cell.title.text = users[indexPath.row].login
         return cell
     }
 }
