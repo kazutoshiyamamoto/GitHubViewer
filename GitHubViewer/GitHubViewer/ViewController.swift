@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let titles = ["タイトル1", "タイトル2", "タイトル3"]
+    private(set) var users: [User] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
