@@ -15,11 +15,35 @@ class TableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    private var task: URLSessionTask?
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    func configure(user: User) {
+        task = {
+            let url = user.avatarURL
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                guard let imageData = data else {
+                    return
+                }
+
+                DispatchQueue.global().async { [weak self] in
+                    guard let image = UIImage(data: imageData) else {
+                        return
+                    }
+
+                    DispatchQueue.main.async {
+                        self?.icon?.image = image
+                        self?.setNeedsLayout()
+                    }
+                }
+            }
+            task.resume()
+            return task
+        }()
 
         // Configure the view for the selected state
+        title.text = user.login
     }
 }

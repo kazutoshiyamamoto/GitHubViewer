@@ -81,7 +81,8 @@ extension ViewController: UITableViewDataSource {
     // セルを作成
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
-        cell.title.text = users[indexPath.row].login
+        cell.configure(user: users[indexPath.row])
+        
         return cell
     }
 }
