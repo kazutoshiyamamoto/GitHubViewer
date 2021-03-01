@@ -10,6 +10,12 @@ import Foundation
 final class Session {
     private let additionalHeaderFields: () -> [String: String]?
     private let session: URLSession
+    
+    init(additionalHeaderFields: @escaping () -> [String: String]? = { nil }, session: URLSession = .shared) {
+        self.additionalHeaderFields = additionalHeaderFields
+        self.session = session
+    }
+    
 }
 
 enum SessionError: Error {
