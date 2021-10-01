@@ -13,6 +13,7 @@
 		FD55D85025E931340094588C /* ItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55D84F25E931340094588C /* ItemsResponse.swift */; };
 		FD55D85525E931C10094588C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55D85425E931C10094588C /* Session.swift */; };
 		FD55D86025ECC79B0094588C /* SearchUsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD55D85F25ECC79B0094588C /* SearchUsersRequest.swift */; };
+		FD9C289E27074EC2006E5477 /* SearchUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9C289D27074EC2006E5477 /* SearchUserModel.swift */; };
 		FDD75CD825DE8AB200FFAA66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD75CD725DE8AB200FFAA66 /* AppDelegate.swift */; };
 		FDD75CDA25DE8AB200FFAA66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD75CD925DE8AB200FFAA66 /* SceneDelegate.swift */; };
 		FDD75CDC25DE8AB200FFAA66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD75CDB25DE8AB200FFAA66 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		FD55D84F25E931340094588C /* ItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsResponse.swift; sourceTree = "<group>"; };
 		FD55D85425E931C10094588C /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		FD55D85F25ECC79B0094588C /* SearchUsersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersRequest.swift; sourceTree = "<group>"; };
+		FD9C289D27074EC2006E5477 /* SearchUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserModel.swift; sourceTree = "<group>"; };
 		FDD75CD425DE8AB200FFAA66 /* GitHubViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD75CD725DE8AB200FFAA66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD75CD925DE8AB200FFAA66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				FDD75CD725DE8AB200FFAA66 /* AppDelegate.swift */,
 				FDD75CD925DE8AB200FFAA66 /* SceneDelegate.swift */,
 				FDD75CDB25DE8AB200FFAA66 /* ViewController.swift */,
+				FD9C289D27074EC2006E5477 /* SearchUserModel.swift */,
 				FDD75CDD25DE8AB200FFAA66 /* Main.storyboard */,
 				FDD75D0B25DE8E1C00FFAA66 /* TableViewCell.xib */,
 				FDD75D0A25DE8E1C00FFAA66 /* TableViewCell.swift */,
@@ -330,6 +333,7 @@
 				FDD75CD825DE8AB200FFAA66 /* AppDelegate.swift in Sources */,
 				FD55D84825E930BB0094588C /* Result.swift in Sources */,
 				FD55D83625E7DC140094588C /* User.swift in Sources */,
+				FD9C289E27074EC2006E5477 /* SearchUserModel.swift in Sources */,
 				FDD75CDA25DE8AB200FFAA66 /* SceneDelegate.swift in Sources */,
 				FD55D85025E931340094588C /* ItemsResponse.swift in Sources */,
 				FD55D85525E931C10094588C /* Session.swift in Sources */,
