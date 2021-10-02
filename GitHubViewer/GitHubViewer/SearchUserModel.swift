@@ -7,6 +7,12 @@
 
 import Foundation
 
+protocol SearchUserModelInput {
+    func fetchUser(
+        query: String,
+        completion: @escaping (Result<[User]>) -> ())
+}
+
 final class SearchUserModel {
     
 }
