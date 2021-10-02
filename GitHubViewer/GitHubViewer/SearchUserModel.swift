@@ -13,6 +13,6 @@ protocol SearchUserModelInput {
         completion: @escaping (Result<[User]>) -> ())
 }
 
-final class SearchUserModel {
+final class SearchUserModel: SearchUserModelInput {
     
 }
