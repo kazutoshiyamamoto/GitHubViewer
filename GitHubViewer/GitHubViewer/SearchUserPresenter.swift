@@ -14,6 +14,11 @@ protocol SearchUserPresenterInput {
     func didTapSearchButton(text: String?)
 }
 
+protocol SearchUserPresenterOutput: AnyObject {
+    func updateUsers(_ users: [User])
+    func transitionToUserDetail(userName: String)
+}
+
 final class SearchUserPresenter: SearchUserPresenterInput {
     
 }
