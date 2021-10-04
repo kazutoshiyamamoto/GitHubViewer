@@ -14,7 +14,6 @@ protocol SearchUserPresenterInput {
     func didTapSearchButton(text: String?)
 }
 
-final class SearchUserPresenter {
-    
+final class SearchUserPresenter: SearchUserPresenterInput {
     
 }
