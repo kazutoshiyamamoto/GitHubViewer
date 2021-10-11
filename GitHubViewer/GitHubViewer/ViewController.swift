@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private(set) var users: [User] = []
+    private var presenter: SearchUserPresenterInput!
+    
+    func inject(presenter: SearchUserPresenterInput) {
+        self.presenter = presenter
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
