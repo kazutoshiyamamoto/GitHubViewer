@@ -58,22 +58,7 @@ extension ViewController: UISearchBarDelegate {
     
     // 検索実行時の処理
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let query = searchBar.text else { return }
-        guard !query.isEmpty else { return }
-        
-        fetchUser(query: query) { [weak self] result in
-            switch result {
-            case .success(let users):
-                self?.users = users
-                
-                DispatchQueue.main.async {
-                    self?.tableView.reloadData()
-                }
-            case .failure(let error):
-                // TODO: Error Handling
-                ()
-            }
-        }
+        presenter.didTapSearchButton(text: searchBar.text)
     }
 }
 
