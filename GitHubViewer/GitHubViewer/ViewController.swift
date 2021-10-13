@@ -50,7 +50,7 @@ extension ViewController: UISearchBarDelegate {
 extension ViewController: UITableViewDataSource {
     // セルの個数
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+        return presenter.numberOfUsers
     }
     
     // セルを作成
