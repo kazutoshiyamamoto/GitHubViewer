@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    private(set) var users: [User] = []
     private var presenter: SearchUserPresenterInput!
     
     func inject(presenter: SearchUserPresenterInput) {
@@ -22,20 +21,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
-    }
-    
-    // ユーザー情報を取得
-    func fetchUser(query: String, completion: @escaping (Result<[User]>) -> ()) {
-        let request = SearchUsersRequest(query: query)
-        
-        Session().send(request) { result in
-            switch result {
-            case .success(let response):
-                completion(.success(response.items))
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
     }
 }
 
